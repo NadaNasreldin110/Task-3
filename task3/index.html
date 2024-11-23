@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Table Example</title>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <td colspan="2">This is paragraph one<br>This is paragraph two</td>
+            <td rowspan="2">
+                <iframe src="https://en.wikipedia.org/" width="200" height="100" title="Wikipedia"></iframe>
+            </td>
+            <td rowspan="2">
+
+                <video src="video.mp4" width="200" height="200" controls></video>
+            </td>
+        </tr>
+        <tr>
+            <td><img src="imgtask3.jpg" alt="HTML5 Logo" width="200" height="200"></td>
+            <td>
+                <audio controls>
+                    <source src="audio.m4a" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </td>
+        </tr>
+    </table>
+
+
+    <h1>Registration Form</h1>
+    <form action="Thankyou.htm" method="post">
+        <label for="fname">First Name:</label><br>
+        <input type="text" id="fname" name="fname" required><br><br>
+
+        <label for="lname">Last Name:</label><br>
+        <input type="text" id="lname" name="lname" required><br><br>
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <label for="repeat-password">Repeat Password:</label><br>
+        <input type="password" id="repeat-password" name="repeat-password" required><br><br>
+
+        <label for="picture">Upload Picture:</label><br>
+        <input type="file" id="picture" name="picture" accept="image/*"><br><br>
+
+        <fieldset>
+            <legend>Gender:</legend>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br>
+        </fieldset><br>
+
+        <label for="faculty">Faculty:</label><br>
+        <select id="faculty" name="faculty">
+            <option value="engineering">Engineering</option>
+            <option value="arts">Arts</option>
+            <option value="science">Science</option>
+        </select><br><br>
+
+        <fieldset>
+            <legend>Interests:</legend>
+            <input type="checkbox" id="programming" name="interests" value="programming">
+            <label for="programming">Programming</label><br>
+            <input type="checkbox" id="reading" name="interests" value="reading">
+            <label for="reading">Reading</label><br>
+            <input type="checkbox" id="swimming" name="interests" value="swimming">
+            <label for="swimming">Swimming</label><br>
+        </fieldset><br>
+
+        <label for="about">About You:</label><br>
+        <textarea id="about" name="about" rows="4" cols="50"></textarea><br><br>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+
+    <h1>Thank you for your registration.</h1>
+    <h2><Thank> YOU </Thank></h2>
+</body>
+</html>
